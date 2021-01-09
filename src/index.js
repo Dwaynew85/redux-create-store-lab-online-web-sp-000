@@ -5,6 +5,7 @@ function createStore(ruducer) {
     state = reducer(state, action);
     render();
   }
+  return state
 }
 
 function candyReducer(state = [], action) {
