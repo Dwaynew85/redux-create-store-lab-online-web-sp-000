@@ -5,6 +5,10 @@ function createStore(ruducer) {
     state = candyReducer(state, action);
     render();
   }
+
+  function getState() {
+    return state
+  }
   return {
     dispatch,
     getState
